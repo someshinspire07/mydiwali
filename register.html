@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Registration_form</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark btn-warning fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand text-danger" href="index.html">.someshinspire</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="https://en.wikipedia.org/wiki/Diwali">Soneri Pahat</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Diwali more info
+              </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Diwali#History">History</a></li>
+                                <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Diwali#Religious_significance">Religious_significance</a></li>
+                                <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Diwali#Description">Description</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Diwali#Other_traditions_and_significance">Other_traditions_and_significance</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Diwali#Nomenclature_and_dates">Nomenclature_and_dates</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="https://gurujipooja.com/">Book Laxmi pooja</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                        <a href="diwali_event_homepage.html">
+                            <button type="button" class="btn btn-success mx-1">Back</button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <h3> </h3>
+
+    </header>
+    <!-- form start -->
+
+    <main>
+        <br>
+        <form class="row g-3 my-19" onsubmit="return validation()" name="registration_page">
+
+            <div class="col-md-4 my-19">
+
+                <label for="validationServer01" class="form-label">First name</label>
+                <input type="text" class="form-control" name="name" id="validationServer01" placeholder="Your First name" required>
+                <span id="errorname" style="color: red;"></span>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationServer02" class="form-label">Mother name</label>
+                <input type="text" class="form-control" name="mothername" id="validationServer02" placeholder="Your Mother Name" required>
+                <span id="errormothername" style="color: red;"></span>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationServer02" class="form-label">Father name</label>
+                <input type="text" class="form-control" name="fathername" id="validationServer03" placeholder="Your Father Name" required>
+                <span id="errorfathername" style="color: red;"></span>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationServer02" class="form-label">Last name</label>
+                <input type="text" class="form-control" name="lastname" id="validationServer04" placeholder="Your Last Name" required>
+                <span id="errorlastname" style="color: red;"></span>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationServerUsername" class="form-label">Unique_ID</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend3">$</span>
+                    <input type="text" class="form-control" name="uniqueID" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                    <span id="erroruniqueid" style="color: red;"></span>
+                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                        Enter your Unique_ID
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationServer03" class="form-label">City</label>
+                <input type="text" class="form-control" name="cityname" id="validationServer05" aria-describedby="validationServer03Feedback" required>
+                <span id="errorcity" style="color: red;"></span>
+                <div id="validationServer03Feedback" class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationServer02" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" name="dob" id="validationServer02" placeholder="Your Born day" required>
+
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <label for="validationServer02" class="form-label">Your Age</label>
+                <input type="number" class="form-control" name="age" id="validationServer02" placeholder="My Age is" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationServer04" class="form-label">Gender</label>
+                <select class="form-select" name="gender" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+          <option selected disabled value="">Gender</option>
+          <option>Male Gender</option>
+          <option>Fe-Male Gender</option>
+          <option>Trans Gender</option>
+        </select>
+                <div id="validationServer04Feedback" class="invalid-feedback">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="col-md-5">
+                <label for="validationServer05" class="form-label">Address</label>
+                <input type="text" class="form-control" name="address" id="validationServer05" aria-describedby="validationServer05Feedback" placeholder="Get your gift on this address" required>
+                <div id="validationServer05Feedback" class="invalid-feedback">
+                    get your gift on this address
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" name="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                    <label class="form-check-label" for="invalidCheck3">
+            <a href="">
+              Agree to terms and conditions
+            </a>
+          </label>
+                    <div id="invalidCheck3Feedback" class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center mx-20">
+
+                <button class="btn btn-warning" type="submit">Save</button>
+            </div>
+            </div>
+            </div>
+        </form>
+        <br>
+
+        <!-- other part -->
+        <div class="d-flex justify-content-center">
+            <a href="task-page_select.html">
+                <button class="btn btn-warning" type="submit">Next</button>
+            </a>
+        </div>
+
+
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                </ul>
+                <p class="text-center text-muted">© 2021 .someshinspire Industries</p>
+            </footer>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+    </script>
+    <!-- my script for data base -->
+    <script type="text/javascript">
+        function validation() {
+
+            var name = document.getElementById('validationServer01').value;
+            var mothername = document.getElementById('validationServer02').value;
+            var fathername = document.getElementById('validationServer03').value;
+            var lastname = document.getElementById('validationServer04').value;
+            var uniqueid = document.getElementById('validationServerUsername').value;
+            var city = document.getElementById('validationServer05').value;
+
+
+
+            var namecheck = /^[A-Za-z]{3,15}$/;
+            var mothernamecheck = /^[A-Za-z]{3,15}$/;
+            var fathernamecheck = /^[A-Za-z]{3,15}$/;
+            var lastnamecheck = /^[A-Za-z]{3,15}$/;
+            var uniqueidcheck = /^[$]{1}[A-Za-z]{3,15}_[0-9]{5}$/;
+            var citynamecheck = /^[A-Za-z]{3-15}$/;
+
+
+            if (namecheck.test(name)) {
+                document.getElementById('errorname').innerHTML = "Looks Good";
+            } else {
+                document.getElementById('errorname').innerHTML = "Please Enter Valid Name";
+                return false;
+            }
+
+            if (mothernamecheck.test(mothername)) {
+                document.getElementById('errormothername').innerHTML = "Looks Good";
+            } else {
+                document.getElementById('errormothername').innerHTML = "Please Enter Valid your Mother_Name";
+                return false;
+            }
+
+            if (fathernamecheck.test(fathername)) {
+                document.getElementById('errorfathername').innerHTML = "Looks Good";
+            } else {
+                document.getElementById('errorfathername').innerHTML = "Please Enter Valid your Father_Name";
+                return false;
+            }
+
+            if (lastnamecheck.test(lastname)) {
+                document.getElementById('errorlastname').innerHTML = "Looks Good";
+            } else {
+                document.getElementById('errorlastname').innerHTML = "Please Enter Valid your Last_Name";
+                return false;
+            }
+
+            if (uniqueidcheck.test(uniqueid)) {
+                document.getElementById('erroruniqueid').innerHTML = "Looks Good";
+            } else {
+                document.getElementById('erroruniqueid').innerHTML = "Please Enter Valid Unique_ID";
+                return false;
+            }
+
+            if (citynamecheck.test(city)) {
+                document.getElementById('errorcity').innerHTML = "Looks Good";
+            } else {
+                document.getElementById('errorcity').innerHTML = "Please Enter Valid your CITY Name";
+                return false;
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        //// database
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwFKhX4-c5Rsm1k2Irq4W0TcUWfkIabYecukIC_mV02K7mhejRHxUi668cLEHVLpeGp/exec'
+        const form = document.forms['registration_page']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert("Hii I'm Somesh and your Registration is Succesfull"))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
